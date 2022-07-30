@@ -41,9 +41,27 @@
             h1, h2, h3 {
                 color: #393939;
             }
+            script{
+                width:560px;
+            }
+            .gist{
+               width:560px;
+               overflow:auto;
+            }
+
+            .gist .blob-wrapper.data{
+               max-height:300px;
+               overflow:auto;
+            }
+       
+            
         </style>
+        
+
+    
     </head>
     <body>
+        
         <div class="content">
             <div id="logo">
                 <h1>RAFAEL MOTA</h1>
@@ -57,6 +75,18 @@
                     <h2>Current Projects</h2>
                         <h3>Deep Roots</h3>
                             <iframe width="560" height="315" src="https://www.youtube.com/embed/bLgpIMXroJE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            
+                            <button id="About" style="float:left;">About</button><button id="Drawline">DrawLine.cs</button>
+                            <div>
+                                <div id="1" style="display: none;">
+                                    <iframe src="https://docs.google.com/document/d/e/2PACX-1vTf3WrdvjrGS7ar-GUCk-yidF0OT0UlzC5CxP0DLjVxg1ni7opQwi54PakHpiri2mzoc_VgCB-Vqo94/pub?embedded=true" width="560" height="300"></iframe>
+                                </div>
+                                <div id= "2" style="display: none;">
+                                    <script src="https://gist.github.com/NonPlusGames/0b45b46f6c241ed3f016be4189d0dca1.js"></script>
+                                </div>
+                            </div>
+                            
+                            
                         <div class="projects">
                             <h2>Old Projects</h2>
                             <h3>BALLiN</h3>
@@ -73,6 +103,16 @@
                 </div>
             </div>
         </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+        <script>
+              $(document).ready(function(){
+                  $("#About").click(function(){
+                    $("#1").show().siblings("div").hide();
+                  });
+                  $("#Drawline").click(function(){
+                    $("#2").show().siblings("div").hide();
+                  });
+                });
+        </script>
     </body>
 </html>
-
