@@ -23,7 +23,7 @@
             #logo{
                 width: 270px;
                 float: left;
-                position: fixed;
+                
                 display: block;
             }
             #projects{
@@ -35,7 +35,7 @@
             img{
                 max-width: 100%;
             }
-            .projects{
+            .oldprojects{
                 padding-top: 10px;
             }
             h1, h2, h3 {
@@ -53,15 +53,9 @@
                max-height:300px;
                overflow:auto;
             }
-       
-            
         </style>
-        
-
-    
     </head>
     <body>
-        
         <div class="content">
             <div id="logo">
                 <h1>RAFAEL MOTA</h1>
@@ -72,47 +66,70 @@
             </div>
             <div id="projects">
                 <div>
-                    <h2>Current Projects</h2>
-                        <h3>Deep Roots</h3>
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/bLgpIMXroJE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                            
-                            <button id="About" style="float:left;">About</button><button id="Drawline">DrawLine.cs</button>
-                            <div>
-                                <div id="1" style="display: none;">
-                                    <iframe src="https://docs.google.com/document/d/e/2PACX-1vTf3WrdvjrGS7ar-GUCk-yidF0OT0UlzC5CxP0DLjVxg1ni7opQwi54PakHpiri2mzoc_VgCB-Vqo94/pub?embedded=true" width="560" height="300"></iframe>
+                    <button id="game" style="float:left;">Game Design</button><button id="web">Web Design</button>
+                    
+                    <div id="webdesign" style="display: none;">
+                        <h3><a href="https://www.cloud-kent.com">Cloud Kent's Portfolio Website</a></h3>
+                        <iframe  class="iframe" width="1028" height="500"  src="https://www.cloud-kent.com" title="Cloud's Site"></iframe>
+                        <h3><a href="https://www.smithschool.org/winter-showcase">The Smith School's Website</a></h3>
+                        <iframe class="iframe" width="1028" height="500" src="https://www.smithschool.org/winter-showcase" title="Showcase" ></iframe>
+                    </div>
+                    
+                    <div id="gamedesign" style="display: none;">
+                        <h2>Current Projects</h2>
+                            <h3>Deep Roots</h3>
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/bLgpIMXroJE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                <button id="About" style="float:left;">About</button><button id="Drawline">DrawLine.cs</button>
+                                <div>
+                                    <div id="doc" style="display: none;">
+                                        <iframe src="https://docs.google.com/document/d/e/2PACX-1vTf3WrdvjrGS7ar-GUCk-yidF0OT0UlzC5CxP0DLjVxg1ni7opQwi54PakHpiri2mzoc_VgCB-Vqo94/pub?embedded=true" width="560" height="300"></iframe>
+                                    </div>
+                                    <div id="code" style="display: none;">
+                                        <script src="https://gist.github.com/NonPlusGames/0b45b46f6c241ed3f016be4189d0dca1.js"></script>
+                                    </div>
                                 </div>
-                                <div id= "2" style="display: none;">
-                                    <script src="https://gist.github.com/NonPlusGames/0b45b46f6c241ed3f016be4189d0dca1.js"></script>
-                                </div>
+                            <div class="oldprojects">
+                                <h2>Old Projects</h2>
+                                <h3>BALLiN</h3>
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/W7xhkGd9VM4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                             </div>
-                            
-                            
-                        <div class="projects">
-                            <h2>Old Projects</h2>
-                            <h3>BALLiN</h3>
-                                <iframe width="560" height="315" src="https://www.youtube.com/embed/W7xhkGd9VM4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </div>
-                        <div class="projects">
-                            <h3>RUN RUN RAMBIT</h3>
-                                <iframe width="560" height="315" src="https://www.youtube.com/embed/1ldMzW-FF_w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </div>
-                        <div class="projects">
-                            <h3>Spermenence</h3>
-                                <iframe width="560" height="315" src="https://www.youtube.com/embed/DRzNisnDTEQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </div>
+                            <div class="oldprojects">
+                                <h3>RUN RUN RAMBIT</h3>
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/1ldMzW-FF_w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                            <div class="oldprojects">
+                                <h3>Spermenence</h3>
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/DRzNisnDTEQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                    </div>
                 </div>
             </div>
         </div>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
         <script>
-              $(document).ready(function(){
-                  $("#About").click(function(){
-                    $("#1").show().siblings("div").hide();
-                  });
-                  $("#Drawline").click(function(){
-                    $("#2").show().siblings("div").hide();
-                  });
+            $(document).ready(function(){
+                $("#About").click(function(){
+                    $("#doc").show().siblings("div").hide();
                 });
+                $("#Drawline").click(function(){
+                    $("#code").show().siblings("div").hide();
+                });
+                
+                $("#game").click(function(){
+                    $("#gamedesign").show().siblings("div").hide();
+                });
+                $("#web").click(function(){
+                    $("#webdesign").show().siblings("div").hide();
+                });
+            });
+
+            var frame = document.getElementByClassName("Iframe");
+            frame.onload = function(){
+                frame.style.height = 
+                frame.contentWindow.document.body.scrollHeight + 'px';
+                frame.style.width  = 
+                frame.contentWindow.document.body.scrollWidth+'px';
+            }
         </script>
     </body>
 </html>
