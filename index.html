@@ -2,77 +2,35 @@
 <html>
     
     <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <meta name="format-detection" content="telephone=no">
+        <meta name="viewport" content="width=device-width; initial-scale=1.0; userscalable=no;">
+        <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE"/>
+        <link rel="stylesheet" href="main.css">
         <style>
-            html{
-                display: block;
-            }
-            body{
-                padding: 50px;
-                display: block;
-                margin: 8px;
-                font: 14px/1.5 "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-                background-color: aliceblue;
-            }
-            .content{
-                width: 860px;
-                margin: 0 auto;
-                display: block;
-            }
-            #logo{
-                width: 270px;
-                float: left;
-                
-                display: block;
-            }
-            #projects{
-                width: 500px;
-                float: right;
-                padding-bottom: 50px;
-                display: block;
-            }
-            img{
-                max-width: 100%;
-            }
-            .oldprojects{
-                padding-top: 10px;
-            }
-            h1, h2, h3 {
-                color: #393939;
-            }
-            script{
-                width:560px;
-            }
-            .gist{
-               width:560px;
-               overflow:auto;
-            }
-
-            .gist .blob-wrapper.data{
-               max-height:300px;
-               overflow:auto;
-            }
+            
         </style>
     </head>
     <body>
         <div class="content">
-            <div id="logo">
+            <div id="logo" style="width: 32%;">
                 <h1>RAFAEL MOTA</h1>
                 <h2>Portfolio</h2>
-                <img src="assets/me.jpg" >
-                <p><a href="assets/Rafael_Resume_22.pdf">Resume</a></p>
-                <p>Contact: <a href="mailto:rim223@live.com">rim223@live.com</a></p>
+                <img src="assets/me.jpg" style="border: 4px solid #ABACCC;" >
+                <div style="margin-left: auto; margin-right: auto; width: 103%;">
+                    <a href="assets/Rafael_Resume_22.pdf" ><div id="resume" > <img src="assets/resumelogo.png" style="width: 16px; display: inline-block; padding-right: 5px; padding-top: 1px;">RESUME</div></a>
+                    <a href="mailto:rim223@live.com"><div id="mail" > <img src="assets/maillogo.png" style="width: 25px; display: inline-block; padding-right: 5px; padding-top: 4px;">rim223@live.com</div></a>
+                    <a href="#"><div id="game" style="display: inline-block;"> <img src="assets/resumelogo.png" style="width: 16px; display: inline-block; padding-right: 11px; padding-top: 1px;">GAME DESIGN</div></a>
+                    <a href="#" id="web" ><div style="display: inline-block;"> <img src="assets/maillogo.png" style="width: 25px; display: inline-block; padding-right: 11px; padding-top: 4px;">WEB DESIGN</div></a> 
+                </div>
             </div>
             <div id="projects">
                 <div>
-                    <button id="game" style="float:left;">Game Design</button><button id="web">Web Design</button>
-                    
-                    <div id="webdesign" style="display: none;">
+                    <div id="webdesign" style=" width:500px;">
                         <h3><a href="https://www.cloud-kent.com">Cloud Kent's Portfolio Website</a></h3>
-                        <iframe  class="iframe" width="1028" height="500"  src="https://www.cloud-kent.com" title="Cloud's Site"></iframe>
+                        <iframe  class="iframe" width="1100" height="800"  src="https://www.cloud-kent.com" title="Cloud's Site" ></iframe>
                         <h3><a href="https://www.smithschool.org/winter-showcase">The Smith School's Website</a></h3>
-                        <iframe class="iframe" width="1028" height="500" src="https://www.smithschool.org/winter-showcase" title="Showcase" ></iframe>
+                        <iframe class="iframe" width="1100" height="800" src="https://www.smithschool.org/winter-showcase" title="Showcase" ></iframe>
                     </div>
                     
                     <div id="gamedesign" style="display: none;">
@@ -117,19 +75,15 @@
                 
                 $("#game").click(function(){
                     $("#gamedesign").show().siblings("div").hide();
+                    $("#game").css("background-color","#9a9cbd");
+                    $("#web").css("background-color","#ABACCC");
                 });
                 $("#web").click(function(){
                     $("#webdesign").show().siblings("div").hide();
+                    $("#web").css("background-color","#9a9cbd");
+                    $("#game").css("background-color","#ABACCC");
                 });
             });
-
-            var frame = document.getElementByClassName("Iframe");
-            frame.onload = function(){
-                frame.style.height = 
-                frame.contentWindow.document.body.scrollHeight + 'px';
-                frame.style.width  = 
-                frame.contentWindow.document.body.scrollWidth+'px';
-            }
         </script>
     </body>
 </html>

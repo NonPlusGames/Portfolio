@@ -1,0 +1,145 @@
+/*resets*/
+body,table,thead,tbody,tr,td,img {
+    padding: 0;
+    margin: 0;
+    border: none;
+    border-spacing: 0px;
+    border-collapse: collapse;
+    vertical-align: top;
+}
+
+h1,h2,h3,h4,h5,h6,p {
+    margin: 0;
+    padding: 0;
+    padding-bottom: 20px;
+    line-height: 1.6;
+    font-family: 'Helvetica', 'Arial', sans-serif;
+}
+
+p,a,li {
+    font-family: 'Helvetica', 'Arial', sans-serif;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+html{
+    display: block;
+}
+
+body{
+    padding: 50px;
+    display: block;
+    margin: 8px;
+    font: 14px/1.5 "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background-color: aliceblue;
+}
+
+#resume{
+    background-color: #ABACCC;
+    padding: 5px;
+    margin-top: 5px;
+    text-align: center;
+    text-decoration: none;
+}
+
+#mail{
+    background-color: #ABACCC;
+    padding: 5px;
+    margin-top: 5px;
+    text-align: center;
+    text-decoration: none;
+}
+#game{
+    background-color: #ABACCC;
+    padding: 5px;
+    margin-top: 5px;
+    text-align: center;
+    text-decoration: none;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 6px;
+    padding-right: 6px;
+}
+
+#web{
+    background-color: #9a9cbd;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 6px;
+    padding-right: 7px;
+
+    margin-top: 5px;
+    text-align: center;
+    text-decoration: none;
+    float: right;
+}
+#web:hover{
+    background-color: #9a9cbd !important;
+}
+
+#game:hover{
+    background-color: #9a9cbd !important;
+}
+a, a:hover, a:active, a:visited {
+    color: #535399; 
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.content{
+    width: 860px;
+    margin: 0 auto;
+    display: block;
+}
+#logo{
+    width: 270px;
+    float: left;
+    display: block;
+   
+}
+#projects{
+    width: 500px;
+    float: right;
+    padding-bottom: 50px;
+    display: block;
+}
+img{
+    max-width: 100%;
+}
+.oldprojects{
+    padding-top: 10px;
+}
+h1, h2, h3 {
+    color: #535399;
+}
+script{
+    width:560px;
+}
+.gist{
+   width:560px;
+   overflow:auto;
+}
+
+.gist .blob-wrapper.data{
+   max-height:300px;
+   overflow:auto;
+}
+
+#webdesign iframe {
+    -moz-transform: scale(.50, .50); 
+    -webkit-transform: scale(.50, .50); 
+    -o-transform: scale(.50, .50);
+    -ms-transform: scale(.50, .50);
+    transform: scale(.50, .50); 
+    -moz-transform-origin: top left;
+    -webkit-transform-origin: top left;
+    -o-transform-origin: top left;
+    -ms-transform-origin: top left;
+    transform-origin: top left;
+    margin-bottom: -400px;
+    border: 10px solid #ABACCC;
+   
+  }
