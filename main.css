@@ -76,6 +76,20 @@ body{
     text-decoration: none;
     float: right;
 }
+
+#edit{
+    background-color: #ABACCC;
+    padding: 5px;
+    margin-top: 5px;
+    text-align: center;
+    text-decoration: none;
+}
+
+#edit:hover{
+    background-color: #9a9cbd !important;
+}
+
+
 #web:hover{
     background-color: #9a9cbd !important;
 }
