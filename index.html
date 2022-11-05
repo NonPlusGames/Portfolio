@@ -80,7 +80,14 @@
                 $("#Drawline").click(function(){
                     $("#code").show().siblings("div").hide();
                 });
+                if (window.location.href.indexOf("editing") > -1) {
+                    $("#editing").show().siblings("div").hide();
+                    $("#edit").css("background-color","#9a9cbd");
+                    $("#game").css("background-color","#ABACCC");
+                    $("#web").css("background-color","#ABACCC");
+                }
                 
+        
                 $("#game").click(function(){
                     $("#gamedesign").show().siblings("div").hide();
                     $("#game").css("background-color","#9a9cbd");
