@@ -86,7 +86,18 @@
                     $("#game").css("background-color","#ABACCC");
                     $("#web").css("background-color","#ABACCC");
                 }
-                
+                if (window.location.href.indexOf("gamedesign") > -1) {
+                    $("#gamedesign").show().siblings("div").hide();
+                    $("#game").css("background-color","#9a9cbd");
+                    $("#edit").css("background-color","#ABACCC");
+                    $("#web").css("background-color","#ABACCC");
+                }
+                if (window.location.href.indexOf("webdesign") > -1) {
+                    $("#webdesign").show().siblings("div").hide();
+                    $("#web").css("background-color","#9a9cbd");
+                    $("#game").css("background-color","#ABACCC");
+                    $("#edit").css("background-color","#ABACCC");
+                }
         
                 $("#game").click(function(){
                     $("#gamedesign").show().siblings("div").hide();
