@@ -35,7 +35,7 @@ fetch('https://random-data-api.com/api/v2/users')
                                 },
                                 {
                                     //You ask where they are going
-                                    text: 'They tell you that they are a merchant and that they have wares, if you have coin. I have a sword, a shield, and a potion.',
+                                    text: 'They tell you that they are a merchant and that they have wares, if you have coin. I have swords and shields for sale.',
                                     stageFour: [
                                         {
                                             //Buy Sword
