@@ -157,7 +157,7 @@ document.addEventListener('DOMContentLoaded',function(){
         }
         if(stage==3)
         {
-            hint="*You can type: [Ask about village.] or [Ask about them.] or [Say bye.]";
+            hint="*You can type: [Ask about village.] or [Ask about them.] or [Say bye.] or [Buy sword.] or [Buy shield.] or [Buy nothing.]";
         }
         if(stage==4)
         {
